@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vers le Meilleur de Soi — Livres Développement Personnel & Spiritualité</title>
+  <meta name="description" content="Découvrez les meilleurs livres de développement personnel, spiritualité, méditation et leadership. Sélection expertement choisie pour transformer votre vie." />
+  <meta name="keywords" content="développement personnel, spiritualité, méditation, leadership, livres, transformation, conscience" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vers le Meilleur de Soi" />
+  <meta property="og:description" content="Les livres qui transforment — développement personnel, spiritualité, leadership." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://verslemeilleurdesoi.fr" />
+  <link rel="canonical" href="https://verslemeilleurdesoi.fr" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vers le Meilleur de Soi",
+    "url": "https://verslemeilleurdesoi.fr",
+    "description": "Sélection de livres de développement personnel, spiritualité, méditation et leadership — choisis pour leur impact réel et leur expérience terrain.",
+    "inLanguage": "fr",
+    "publisher": {
+      "@type": "Person",
+      "name": "Stéphane D'Acunto",
+      "jobTitle": "Coach certifié RNCP, Formateur, Expert en leadership"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://verslemeilleurdesoi.fr/#livres",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <style>
+    /* ─── RESET & BASE ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --or: #C9A84C;
+      --or-clair: #E8C97A;
+      --violet-profond: #0D0818;
+      --violet-mid: #1A0F35;
+      --violet-card: #1E1040;
+      --violet-border: #3B2070;
+      --texte: #E8E0F0;
+      --texte-soft: #B8A8D0;
+      --blanc: #ffffff;
+      --rayon: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--violet-profond);
+      color: var(--texte);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── ÉTOILES ANIMÉES ─── */
+    #stars-canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(13, 8, 24, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--or);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--texte-soft);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-family: 'Arial', sans-serif;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--or); }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      color: var(--or-clair);
+      font-family: 'Arial', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.2rem;
+      border-radius: 50px;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      line-height: 1.15;
+      color: var(--blanc);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 60px rgba(201, 168, 76, 0.3);
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--or), var(--or-clair));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--texte-soft);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      font-style: italic;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--or), #A07830);
+      color: var(--violet-profond);
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 30px rgba(201, 168, 76, 0.35);
+    }
+
+    .hero-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(201, 168, 76, 0.5);
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--texte-soft);
+      font-family: 'Arial', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      animation: pulse 2s infinite;
+    }
+
+    .scroll-indicator::after {
+      content: '↓';
+      font-size: 1.2rem;
+      color: var(--or);
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    /* ─── SECTIONS COMMUNES ─── */
+    section {
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      color: var(--blanc);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title span { color: var(--or); }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--texte-soft);
+      font-style: italic;
+      margin-bottom: 3rem;
+      font-size: 1rem;
+    }
+
+    .separator {
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--or), transparent);
+      margin: 1rem auto 2rem;
+    }
+
+    /* ─── CATÉGORIES ─── */
+    .categories {
+      padding: 5rem 0 3rem;
+      background: rgba(26, 15, 53, 0.5);
+    }
+
+    .cats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .cat-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(59, 32, 112, 0.4);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      border-radius: 50px;
+      padding: 0.6rem 1.5rem;
+      color: var(--or-clair);
+      font-family: 'Arial', sans-serif;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .cat-pill:hover, .cat-pill.active {
+      background: rgba(201, 168, 76, 0.2);
+      border-color: var(--or);
+      color: var(--or);
+      transform: translateY(-2px);
+    }
+
+    /* ─── LIVRES ─── */
+    .livres {
+      padding: 4rem 0 6rem;
+    }
+
+    .livres-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .livre-card {
+      background: var(--violet-card);
+      border: 1px solid var(--violet-border);
+      border-radius: var(--rayon);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .livre-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 30px rgba(201, 168, 76, 0.1);
+      border-color: var(--or);
+    }
+
+    .livre-img-wrapper {
+      position: relative;
+      background: linear-gradient(160deg, #2A1555, #1A0F35);
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .livre-img-wrapper img {
+      max-height: 180px;
+      max-width: 140px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,0.6));
+      transition: transform 0.3s;
+    }
+
+    .livre-card:hover .livre-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .livre-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: linear-gradient(135deg, var(--or), #A07830);
+      color: var(--violet-profond);
+      font-family: 'Arial', sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+    }
+
+    .livre-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .livre-categorie {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.75rem;
+      color: var(--or);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
+    }
+
+    .livre-titre {
+      font-size: 1.15rem;
+      color: var(--blanc);
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+
+    .livre-auteur {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.85rem;
+      color: var(--texte-soft);
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .livre-description {
+      font-size: 0.9rem;
+      color: var(--texte-soft);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    .livre-stars {
+      color: var(--or);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .btn-amazon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--or), #A07830);
+      color: var(--violet-profond);
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s;
+      letter-spacing: 0.03em;
+    }
+
+    .btn-amazon:hover {
+      background: linear-gradient(135deg, var(--or-clair), var(--or));
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4);
+    }
+
+    .btn-amazon svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--violet-profond);
+    }
+
+    /* ─── CITATION ─── */
+    .citation-section {
+      padding: 6rem 0;
+      background: linear-gradient(180deg, transparent, rgba(59, 32, 112, 0.2), transparent);
+    }
+
+    .citation-block {
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 3rem;
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 20px;
+      background: rgba(30, 16, 64, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    .citation-block blockquote {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      color: var(--or-clair);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .citation-block cite {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.9rem;
+      color: var(--texte-soft);
+      font-style: normal;
+      letter-spacing: 0.1em;
+    }
+
+    /* ─── NEWSLETTER ─── */
+    .newsletter {
+      padding: 5rem 0;
+      background: rgba(26, 15, 53, 0.6);
+    }
+
+    .newsletter-box {
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .newsletter-box p {
+      color: var(--texte-soft);
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0;
+      border-radius: 50px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      background: rgba(30, 16, 64, 0.8);
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      padding: 1rem 1.5rem;
+      color: var(--texte);
+      font-family: 'Arial', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .newsletter-form input::placeholder { color: var(--texte-soft); }
+
+    .newsletter-form button {
+      background: linear-gradient(135deg, var(--or), #A07830);
+      border: none;
+      color: var(--violet-profond);
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover { opacity: 0.9; }
+
+    .newsletter-legal {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.75rem;
+      color: var(--texte-soft);
+      margin-top: 1rem;
+      opacity: 0.7;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: rgba(13, 8, 24, 0.95);
+      border-top: 1px solid rgba(201, 168, 76, 0.15);
+      padding: 3rem 0 2rem;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .footer-logo {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      color: var(--or);
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--texte-soft);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--or); }
+
+    .footer-affiliation {
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      font-size: 0.78rem;
+      color: var(--texte-soft);
+      opacity: 0.7;
+      line-height: 1.6;
+      padding: 1.2rem;
+      border: 1px solid rgba(201, 168, 76, 0.1);
+      border-radius: 10px;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--texte-soft);
+      opacity: 0.5;
+    }
+
+    /* ─── RUBRIQUES ─── */
+    .rubrique-header {
+      margin: 3rem 0 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+    }
+
+    .rubrique-titre {
+      font-size: 1.4rem;
+      color: var(--or-clair);
+      font-family: 'Georgia', serif;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .livres-grid { grid-template-columns: 1fr; }
+      .newsletter-form { flex-direction: column; border-radius: 12px; }
+      .newsletter-form button { border-radius: 0 0 12px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- CANVAS ÉTOILES -->
+<canvas id="stars-canvas"></canvas>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#" class="nav-logo">✦ Vers le Meilleur de Soi</a>
+  <ul class="nav-links">
+    <li><a href="#livres">Livres</a></li>
+    <li><a href="#categories">Catégories</a></li>
+    <li><a href="#newsletter">Aller plus loin</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">✦ Sélection Expertement Choisie</div>
+  <h1>Les livres qui <span>transforment</span><br>votre vie</h1>
+  <p>Développement personnel, spiritualité, méditation et leadership — une sélection pour ceux qui refusent de rester ordinaires.</p>
+
+  <div style="max-width:680px;margin:0 auto 2.5rem;text-align:left;">
+    <p style="font-size:1rem;color:var(--texte-soft);font-style:italic;line-height:1.8;margin-bottom:1rem;">
+      Ces livres ne sont pas une liste de plus. Ils ont été lus, appliqués, testés dans le réel — en entreprise, en coaching, dans les moments qui comptent vraiment.
+    </p>
+    <p style="font-size:1rem;color:var(--texte-soft);font-style:italic;line-height:1.8;margin-bottom:1rem;">
+      Dans la jungle du développement personnel, beaucoup écrivent sans avoir vécu. Ici, chaque sélection répond à une seule exigence : l'auteur a expérimenté ce qu'il enseigne, et ça a produit des résultats.
+    </p>
+    <p style="font-size:1rem;color:var(--texte-soft);font-style:italic;line-height:1.8;margin-bottom:1.5rem;">
+      Que tu cherches du sens, de la performance ou les deux — tu es au bon endroit.
+    </p>
+    <p style="font-size:1.25rem;font-weight:bold;font-style:normal;font-family:'Arial',sans-serif;letter-spacing:0.08em;background:linear-gradient(135deg,var(--or),var(--or-clair));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+      TA SEULE LIMITE, C'EST TOI.
+    </p>
+  </div>
+
+  <a href="#livres" class="hero-cta">Découvrir la sélection</a>
+  <div class="scroll-indicator">Explorer</div>
+</section>
+
+<!-- CATÉGORIES -->
+<section class="categories" id="categories">
+  <div class="container">
+    <h2 class="section-title">Explorer par <span>catégorie</span></h2>
+    <div class="separator"></div>
+    <div class="cats-grid">
+      <a href="#livres" class="cat-pill active" onclick="filtrerRubrique('tous', this)">🌟 Tous les livres</a>
+      <a href="#livres" class="cat-pill" onclick="filtrerRubrique('dev', this)">🧠 Développement Personnel</a>
+      <a href="#livres" class="cat-pill" onclick="filtrerRubrique('leadership', this)">👑 Leadership</a>
+      <a href="#livres" class="cat-pill" onclick="filtrerRubrique('spiritualite', this)">🔮 Spiritualité</a>
+      <a href="#livres" class="cat-pill" onclick="filtrerRubrique('finance', this)">💰 Finance</a>
+      <a href="#livres" class="cat-pill" onclick="filtrerRubrique('meditation', this)">🧘 Méditation</a>
+    </div>
+  </div>
+</section>
+
+<!-- LIVRES -->
+<section class="livres" id="livres">
+  <div class="container">
+    <h2 class="section-title">Notre <span>sélection</span></h2>
+    <p class="section-subtitle">Des ouvrages choisis pour leur impact réel sur la transformation personnelle</p>
+    <div class="separator"></div>
+
+    <!-- RUBRIQUE 1 : DÉVELOPPEMENT PERSONNEL -->
+    <div class="rubrique-header" data-rubrique="dev">
+      <h3 class="rubrique-titre">🧠 Développement Personnel</h3>
+    </div>
+    <div class="livres-grid" data-rubrique="dev">
+
+      <!-- La Magie de Penser Grand -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71Q1tPupKjL._AC_UY327_FMwebp_QL65_.jpg" alt="La Magie de Penser Grand - David J. Schwartz" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Classique absolu</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">La Magie de Penser Grand</h3>
+          <div class="livre-auteur">David J. Schwartz</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 12 000+ avis)</span></div>
+          <p class="livre-description">Schwartz démontre que la taille de votre succès est déterminée par la taille de votre pensée. Un guide pratique pour dépasser ses limites mentales et atteindre des objectifs que la majorité juge impossibles.</p>
+          <a href="https://www.amazon.fr/s?k=La+Magie+de+Penser+Grand+David+Schwartz&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Rendez-vous au Sommet -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71zGv+Dy5sL._AC_UY327_FMwebp_QL65_.jpg" alt="Rendez-vous au Sommet - Zig Ziglar" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Zig Ziglar</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Rendez-vous au Sommet</h3>
+          <div class="livre-auteur">Zig Ziglar</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 9 000+ avis)</span></div>
+          <p class="livre-description">Le maître de la motivation Zig Ziglar livre ici sa philosophie complète de la réussite. Un livre d'une densité rare sur l'attitude, la persévérance et la construction d'une vie intentionnelle.</p>
+          <a href="https://www.amazon.fr/s?k=Rendez-vous+au+Sommet+Zig+Ziglar&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Demandez et vous recevrez -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71zY5JLUKUL._AC_UY327_FMwebp_QL65_.jpg" alt="Demandez et vous recevrez - Esther et Jerry Hicks" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Loi de l'attraction</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Demandez et vous recevrez</h3>
+          <div class="livre-auteur">Esther & Jerry Hicks</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 6 000+ avis)</span></div>
+          <p class="livre-description">Le texte fondateur sur la loi de l'attraction transmis par Abraham. Esther Hicks a vécu et appliqué ces enseignements pendant des décennies, transformant des centaines de milliers de vies.</p>
+          <a href="https://www.amazon.fr/s?k=Demandez+vous+recevrez+Esther+Jerry+Hicks&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Le Secret -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81YCGEeGFGL._AC_UY327_FMwebp_QL65_.jpg" alt="Le Secret - Rhonda Byrne" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">30M vendus</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Le Secret</h3>
+          <div class="livre-auteur">Rhonda Byrne</div>
+          <div class="livre-stars">★★★★☆ <span style="color:var(--texte-soft);font-size:0.8rem">(4.6/5 · 22 000+ avis)</span></div>
+          <p class="livre-description">Rhonda Byrne a découvert le Secret après une période de crise personnelle profonde. Ce livre a introduit la loi de l'attraction à des millions de personnes à travers le monde.</p>
+          <a href="https://www.amazon.fr/s?k=Le+Secret+Rhonda+Byrne&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- La Nouvelle Psycho-Cybernétique -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71hNvXjVTGL._AC_UY327_FMwebp_QL65_.jpg" alt="La Nouvelle Psycho-Cybernétique - Maxwell Maltz" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Maxwell Maltz</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">La Nouvelle Psycho-Cybernétique</h3>
+          <div class="livre-auteur">Maxwell Maltz</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 7 000+ avis)</span></div>
+          <p class="livre-description">Le chirurgien Maltz a observé que ses patients ne changeaient pas mentalement malgré les transformations physiques. Sa découverte révolutionnaire : reprogrammer l'image de soi pour transformer sa vie en profondeur.</p>
+          <a href="https://www.amazon.fr/s?k=La+Nouvelle+Psycho-Cybern%C3%A9tique+Maxwell+Maltz&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- La Loi du Succès en 16 Leçons -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71gXFTxDvIL._AC_UY327_FMwebp_QL65_.jpg" alt="La Loi du Succès en 16 Leçons - Napoleon Hill" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Œuvre maîtresse</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">La Loi du Succès en 16 Leçons</h3>
+          <div class="livre-auteur">Napoleon Hill</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 5 000+ avis)</span></div>
+          <p class="livre-description">L'œuvre maîtresse de Napoleon Hill, publiée avant "Pensez et devenez riche". 16 leçons exhaustives sur les lois fondamentales de la réussite, fruit de 20 ans d'étude des plus grands leaders américains.</p>
+          <a href="https://www.amazon.fr/s?k=La+Loi+du+Succ%C3%A8s+16+Le%C3%A7ons+Napoleon+Hill&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Réfléchissez et devenez riche -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71UypkUjStL._AC_UY327_FMwebp_QL65_.jpg" alt="Réfléchissez et devenez riche - Napoleon Hill" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Classique absolu</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Pensez et devenez riche</h3>
+          <div class="livre-auteur">Napoleon Hill</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 20 000+ avis)</span></div>
+          <p class="livre-description">Le livre de développement personnel le plus vendu de l'histoire. Hill a interviewé 500 des hommes les plus riches d'Amérique sur 20 ans pour en extraire les 13 principes universels de la réussite.</p>
+          <a href="https://www.amazon.fr/s?k=Pensez+devenez+riche+Napoleon+Hill&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- La Magie de Croire -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71gHCv8WKUL._AC_UY327_FMwebp_QL65_.jpg" alt="La Magie de Croire - Claude M. Bristol" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Claude M. Bristol</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">La Magie de Croire</h3>
+          <div class="livre-auteur">Claude M. Bristol</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 6 000+ avis)</span></div>
+          <p class="livre-description">Bristol, journaliste et vétéran de guerre, explore la puissance de la foi en soi. Un livre sur la programmation mentale et la force de conviction qui a influencé des générations de leaders et d'entrepreneurs.</p>
+          <a href="https://www.amazon.fr/s?k=La+Magie+de+Croire+Claude+Bristol&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Comment se faire des amis -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71SnoPiRxgL._AC_UY327_FMwebp_QL65_.jpg" alt="Comment se faire des amis - Dale Carnegie" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Classique absolu</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Comment se faire des amis</h3>
+          <div class="livre-auteur">Dale Carnegie</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 18 000+ avis)</span></div>
+          <p class="livre-description">Le livre de relations humaines le plus lu au monde. Carnegie a formé des millions de personnes à l'art d'influencer positivement et de créer des liens authentiques durables.</p>
+          <a href="https://www.amazon.fr/s?k=Comment+se+faire+des+amis+Dale+Carnegie&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Le Fonceur -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71PJZE9HJPL._AC_UY327_FMwebp_QL65_.jpg" alt="Le Fonceur - Peter B. Kyne" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Culte</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Le Fonceur</h3>
+          <div class="livre-auteur">Peter B. Kyne</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 5 000+ avis)</span></div>
+          <p class="livre-description">Une parabole intemporelle sur l'initiative, la persévérance et l'excellence. Ce court roman illustre pourquoi certains réussissent là où d'autres abandonnent — lu par des générations d'entrepreneurs.</p>
+          <a href="https://www.amazon.fr/s?k=Le+Fonceur+Peter+Kyne&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Le Pouvoir de la Pensée Positive -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71qE5O5KJEL._AC_UY327_FMwebp_QL65_.jpg" alt="La Puissance de la Pensée Positive - Norman Vincent Peale" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">5M+ vendus</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Le Pouvoir de la Pensée Positive</h3>
+          <div class="livre-auteur">Norman Vincent Peale</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 9 000+ avis)</span></div>
+          <p class="livre-description">Le pasteur Peale a transformé des milliers de vies par sa méthode. Un ouvrage pionnier sur la force de la pensée, toujours aussi actuel 70 ans après sa première publication.</p>
+          <a href="https://www.amazon.fr/s?k=Puissance+pens%C3%A9e+positive+Norman+Vincent+Peale&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Le Jeu du Travail -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71yGrM+KJEL._AC_UY327_FMwebp_QL65_.jpg" alt="Le Jeu du Travail - Scott Adams" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Scott Adams</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Le Jeu du Travail</h3>
+          <div class="livre-auteur">Scott Adams</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 4 000+ avis)</span></div>
+          <p class="livre-description">Le créateur de Dilbert partage une vision contre-intuitive du succès professionnel : développer des systèmes plutôt que de poursuivre des objectifs, et se positionner là où la chance peut frapper.</p>
+          <a href="https://www.amazon.fr/s?k=Le+Jeu+du+Travail+Scott+Adams&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Père Riche Père Pauvre -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UY327_FMwebp_QL65_.jpg" alt="Père Riche Père Pauvre - Robert Kiyosaki" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">40M vendus</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Père Riche Père Pauvre</h3>
+          <div class="livre-auteur">Robert T. Kiyosaki</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 30 000+ avis)</span></div>
+          <p class="livre-description">Kiyosaki raconte comment son "père riche" lui a enseigné ce que l'école n'enseigne pas : la différence entre actifs et passifs, et comment faire travailler l'argent pour soi plutôt que le contraire.</p>
+          <a href="https://www.amazon.fr/s?k=P%C3%A8re+Riche+P%C3%A8re+Pauvre+Kiyosaki&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Atomic Habits -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81wgcld4wxL._AC_UY327_FMwebp_QL65_.jpg" alt="Atomic Habits - James Clear" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">N°1 Mondial</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Atomic Habits</h3>
+          <div class="livre-auteur">James Clear</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 25 000+ avis)</span></div>
+          <p class="livre-description">La méthode scientifique pour construire de bonnes habitudes et éliminer les mauvaises. Un système en 4 lois qui a transformé des millions de vies à travers le monde.</p>
+          <a href="https://www.amazon.fr/s?k=Atomic+Habits+James+Clear&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Influence et Manipulation -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71MaKLv63wL._AC_UY327_FMwebp_QL65_.jpg" alt="Influence et Manipulation - Robert Cialdini" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Référence mondiale</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Influence et Manipulation</h3>
+          <div class="livre-auteur">Robert Cialdini</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 14 000+ avis)</span></div>
+          <p class="livre-description">Le psychologue Cialdini a passé 3 ans infiltré dans des organisations de persuasion pour identifier les 6 principes universels d'influence. Un livre que tout professionnel doit avoir lu.</p>
+          <a href="https://www.amazon.fr/s?k=Influence+manipulation+Robert+Cialdini&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- L'Obstacle est le Chemin -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81AGe9DLJNL._AC_UY327_FMwebp_QL65_.jpg" alt="L'Obstacle est le Chemin - Ryan Holiday" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Stoïcisme moderne</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">L'Obstacle est le Chemin</h3>
+          <div class="livre-auteur">Ryan Holiday</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 7 000+ avis)</span></div>
+          <p class="livre-description">Holiday a traversé des échecs majeurs avant de découvrir la philosophie stoïcienne. Il démontre comment les obstacles deviennent la voie, illustré par des exemples de leaders historiques.</p>
+          <a href="https://www.amazon.fr/s?k=L%27obstacle+est+le+chemin+Ryan+Holiday&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Plus Malin que le Diable -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81Wh7M5hINL._AC_UY327_FMwebp_QL65_.jpg" alt="Plus Malin que le Diable - Napoleon Hill" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Napoleon Hill</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧠 Développement Personnel</div>
+          <h3 class="livre-titre">Plus Malin que le Diable</h3>
+          <div class="livre-auteur">Napoleon Hill</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 8 000+ avis)</span></div>
+          <p class="livre-description">Manuscrit caché pendant 72 ans. Hill révèle les forces invisibles qui sabotent la réussite et les stratégies pour les surmonter — son œuvre la plus personnelle et la plus puissante.</p>
+          <a href="https://www.amazon.fr/s?k=Plus+malin+que+le+diable+Napoleon+Hill&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+    </div><!-- fin grille dev perso -->
+
+    <!-- RUBRIQUE 2 : LEADERSHIP & VENTE -->
+    <div class="rubrique-header" data-rubrique="leadership">
+      <h3 class="rubrique-titre">👑 Leadership & Vente</h3>
+    </div>
+    <div class="livres-grid" data-rubrique="leadership">
+
+      <!-- Les 7 Habitudes -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71RgHCUhzBL._AC_UY327_FMwebp_QL65_.jpg" alt="Les 7 Habitudes des Gens Très Efficaces - Stephen Covey" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">30M vendus</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">👑 Leadership</div>
+          <h3 class="livre-titre">Les 7 Habitudes des Gens Très Efficaces</h3>
+          <div class="livre-auteur">Stephen R. Covey</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 15 000+ avis)</span></div>
+          <p class="livre-description">30 millions d'exemplaires vendus dans le monde. La bible du leadership personnel. Covey présente un cadre complet pour développer l'efficacité personnelle et professionnelle durablement.</p>
+          <a href="https://www.amazon.fr/s?k=7+habitudes+gens+efficaces+Covey&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Pouvoir Illimité -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71pqGFkCwnL._AC_UY327_FMwebp_QL65_.jpg" alt="Pouvoir Illimité - Anthony Robbins" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Anthony Robbins</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">👑 Leadership</div>
+          <h3 class="livre-titre">Pouvoir Illimité</h3>
+          <div class="livre-auteur">Anthony Robbins</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 10 000+ avis)</span></div>
+          <p class="livre-description">Anthony Robbins a surmonté une enfance difficile pour devenir le coach le plus influent au monde. Ce livre condense les techniques de PNL et de changement qu'il utilise avec des millions de personnes.</p>
+          <a href="https://www.amazon.fr/s?k=Pouvoir+illimit%C3%A9+Anthony+Robbins+PNL&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Convaincre en 2 minutes -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71WNmTPNjgL._AC_UY327_FMwebp_QL65_.jpg" alt="Convaincre en moins de 2 minutes - Nicholas Boothman" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Communication</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">👑 Leadership</div>
+          <h3 class="livre-titre">Convaincre en moins de 2 minutes</h3>
+          <div class="livre-auteur">Nicholas Boothman</div>
+          <div class="livre-stars">★★★★☆ <span style="color:var(--texte-soft);font-size:0.8rem">(4.5/5 · 4 000+ avis)</span></div>
+          <p class="livre-description">Formateur en communication non verbale, Boothman révèle comment créer une connexion immédiate et convaincre n'importe qui en moins de 2 minutes grâce à des techniques testées sur le terrain.</p>
+          <a href="https://www.amazon.fr/s?k=Convaincre+moins+2+minutes+Boothman&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- La Semaine de 4 heures -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71iV9dIBr5L._AC_UY327_FMwebp_QL65_.jpg" alt="La Semaine de 4 heures - Timothy Ferriss" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Révolutionnaire</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">👑 Leadership & Vente</div>
+          <h3 class="livre-titre">La Semaine de 4 heures</h3>
+          <div class="livre-auteur">Timothy Ferriss</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 15 000+ avis)</span></div>
+          <p class="livre-description">Ferriss a quitté son emploi, automatisé ses revenus et voyagé dans le monde entier en travaillant 4 heures par semaine. Un guide concret pour sortir du rat race, déléguer et construire une vie de liberté.</p>
+          <a href="https://www.amazon.fr/s?k=Semaine+4+heures+Timothy+Ferriss&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+    </div><!-- fin grille leadership -->
+
+    <!-- RUBRIQUE 3 : SPIRITUALITÉ & ÉVEIL -->
+    <div class="rubrique-header" data-rubrique="spiritualite">
+      <h3 class="rubrique-titre">🔮 Spiritualité & Éveil</h3>
+    </div>
+    <div class="livres-grid" data-rubrique="spiritualite">
+
+      <!-- Le Pouvoir du Moment Présent -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71rEH8Qqh6L._AC_UY327_FMwebp_QL65_.jpg" alt="Le Pouvoir du Moment Présent - Eckhart Tolle" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Bestseller</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🔮 Spiritualité</div>
+          <h3 class="livre-titre">Le Pouvoir du Moment Présent</h3>
+          <div class="livre-auteur">Eckhart Tolle</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 12 000+ avis)</span></div>
+          <p class="livre-description">Le guide spirituel le plus vendu de la décennie. Tolle vous enseigne comment vous libérer de l'emprise du mental et accéder à une paix intérieure profonde par la présence totale.</p>
+          <a href="https://www.amazon.fr/s?k=Pouvoir+moment+pr%C3%A9sent+Eckhart+Tolle&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Les Quatre Accords Toltèques -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UY327_FMwebp_QL65_.jpg" alt="Les Quatre Accords Toltèques - Don Miguel Ruiz" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Incontournable</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">✨ Conscience & Éveil</div>
+          <h3 class="livre-titre">Les Quatre Accords Toltèques</h3>
+          <div class="livre-auteur">Don Miguel Ruiz</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 20 000+ avis)</span></div>
+          <p class="livre-description">Quatre principes simples et puissants issus de la sagesse toltèque pour se libérer des croyances limitantes et vivre dans la liberté, l'amour et la joie authentique.</p>
+          <a href="https://www.amazon.fr/s?k=Quatre+accords+tolt%C3%A8ques+Don+Miguel+Ruiz&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Pendu par la Langue -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71yK6WJFVNL._AC_UY327_FMwebp_QL65_.jpg" alt="Pendu par la Langue - Don Gossett" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Don Gossett</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🔮 Spiritualité</div>
+          <h3 class="livre-titre">Pendu par la Langue</h3>
+          <div class="livre-auteur">Don Gossett</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 5 000+ avis)</span></div>
+          <p class="livre-description">Un classique sur la puissance des mots que l'on prononce sur soi-même. Gossett démontre comment nos paroles façonnent notre réalité et comment changer radicalement sa vie en changeant son langage quotidien.</p>
+          <a href="https://www.amazon.fr/s?k=Pendu+par+la+Langue+Don+Gossett&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- La Langue de la Force Créatrice -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71v5wk1VTEL._AC_UY327_FMwebp_QL65_.jpg" alt="La Langue de la Force Créatrice - Don Gossett" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Force des mots</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🔮 Spiritualité</div>
+          <h3 class="livre-titre">La Langue de la Force Créatrice</h3>
+          <div class="livre-auteur">Don Gossett & E.W. Kenyon</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 4 000+ avis)</span></div>
+          <p class="livre-description">La suite spirituelle de "Pendu par la Langue". Un enseignement profond sur la puissance créatrice de la parole et comment utiliser les mots de foi pour manifester des changements durables dans sa vie.</p>
+          <a href="https://www.amazon.fr/s?k=La+Langue+de+la+Force+Cr%C3%A9atrice+Gossett&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Ce que vous dites est ce que vous obtenez -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71ZkGv8yU5L._AC_UY327_FMwebp_QL65_.jpg" alt="Ce que vous dites est ce que vous obtenez - Don Gossett" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Don Gossett</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🔮 Spiritualité</div>
+          <h3 class="livre-titre">Ce que vous dites est ce que vous obtenez</h3>
+          <div class="livre-auteur">Don Gossett</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 3 000+ avis)</span></div>
+          <p class="livre-description">Un enseignement fondamental sur la confession positive et la loi de la parole. Gossett révèle comment les mots que vous prononcez quotidiennement créent littéralement la réalité que vous vivez.</p>
+          <a href="https://www.amazon.fr/s?k=Ce+que+vous+dites+est+ce+que+vous+obtenez+Gossett&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+    </div><!-- fin grille spiritualité -->
+
+    <!-- RUBRIQUE 4 : FINANCE & PROSPÉRITÉ -->
+    <div class="rubrique-header" data-rubrique="finance">
+      <h3 class="rubrique-titre">💰 Finance & Prospérité</h3>
+    </div>
+    <div class="livres-grid" data-rubrique="finance">
+
+      <!-- L'Homme le Plus Riche de Babylone -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71RK3ZU0pML._AC_UY327_FMwebp_QL65_.jpg" alt="L'Homme le Plus Riche de Babylone - George S. Clason" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Classique</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">💰 Finance</div>
+          <h3 class="livre-titre">L'Homme le Plus Riche de Babylone</h3>
+          <div class="livre-auteur">George S. Clason</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 8 000+ avis)</span></div>
+          <p class="livre-description">Les principes intemporels de la prospérité financière et personnelle, racontés à travers les paraboles de l'ancienne Babylone. Un livre fondateur lu par des millions de personnes.</p>
+          <a href="https://www.amazon.fr/s?k=Homme+plus+riche+Babylone+Clason&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Père Riche Père Pauvre -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UY327_FMwebp_QL65_.jpg" alt="Père Riche Père Pauvre - Robert Kiyosaki" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">40M vendus</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">💰 Finance</div>
+          <h3 class="livre-titre">Père Riche Père Pauvre</h3>
+          <div class="livre-auteur">Robert T. Kiyosaki</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 30 000+ avis)</span></div>
+          <p class="livre-description">Kiyosaki raconte comment son "père riche" lui a enseigné ce que l'école n'enseigne pas : la différence entre actifs et passifs, et pourquoi faire travailler l'argent pour soi change tout.</p>
+          <a href="https://www.amazon.fr/s?k=P%C3%A8re+Riche+P%C3%A8re+Pauvre+Kiyosaki&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- La Science de la Richesse -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71Ks9cqpJKL._AC_UY327_FMwebp_QL65_.jpg" alt="La Science de la Richesse - Wallace D. Wattles" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Wattles</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">💰 Finance</div>
+          <h3 class="livre-titre">La Science de la Richesse</h3>
+          <div class="livre-auteur">Wallace D. Wattles</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 7 000+ avis)</span></div>
+          <p class="livre-description">Publié en 1910, ce livre a inspiré Rhonda Byrne et Le Secret. Wattles pose des bases concrètes et spirituelles sur la création de richesse — une œuvre fondatrice toujours d'une redoutable actualité.</p>
+          <a href="https://www.amazon.fr/s?k=La+Science+de+la+Richesse+Wattles&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Le Quadrant du Cashflow -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71wCT0tPSQL._AC_UY327_FMwebp_QL65_.jpg" alt="Le Quadrant du Cashflow - Robert Kiyosaki" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Kiyosaki</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">💰 Finance</div>
+          <h3 class="livre-titre">Le Quadrant du Cashflow</h3>
+          <div class="livre-auteur">Robert T. Kiyosaki</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 9 000+ avis)</span></div>
+          <p class="livre-description">La suite de Père Riche. Kiyosaki explique les 4 façons de générer des revenus — salarié, indépendant, entrepreneur, investisseur — et pourquoi seuls les deux derniers mènent à la liberté financière.</p>
+          <a href="https://www.amazon.fr/s?k=Quadrant+Cashflow+Kiyosaki&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+    </div><!-- fin grille finance -->
+
+    <!-- RUBRIQUE 5 : MÉDITATION -->
+    <div class="rubrique-header" data-rubrique="meditation">
+      <h3 class="rubrique-titre">🧘 Méditation & Pleine Conscience</h3>
+    </div>
+    <div class="livres-grid" data-rubrique="meditation">
+
+      <!-- L'Art de la Méditation -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71dxvEiPRkL._AC_UY327_FMwebp_QL65_.jpg" alt="L'Art de la Méditation - Matthieu Ricard" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Coup de cœur</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧘 Méditation</div>
+          <h3 class="livre-titre">L'Art de la Méditation</h3>
+          <div class="livre-auteur">Matthieu Ricard</div>
+          <div class="livre-stars">★★★★☆ <span style="color:var(--texte-soft);font-size:0.8rem">(4.6/5 · 5 000+ avis)</span></div>
+          <p class="livre-description">Le moine bouddhiste Matthieu Ricard, surnommé "l'homme le plus heureux du monde", guide vers une pratique méditative accessible et transformatrice, ancrée dans la tradition tibétaine.</p>
+          <a href="https://www.amazon.fr/s?k=Art+m%C3%A9ditation+Matthieu+Ricard&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Où tu vas, tu es -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71M0XBxJvBL._AC_UY327_FMwebp_QL65_.jpg" alt="Où tu vas, tu es - Jon Kabat-Zinn" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Jon Kabat-Zinn</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧘 Méditation</div>
+          <h3 class="livre-titre">Où tu vas, tu es</h3>
+          <div class="livre-auteur">Jon Kabat-Zinn</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 6 000+ avis)</span></div>
+          <p class="livre-description">Le fondateur de la pleine conscience en Occident. Kabat-Zinn a passé des décennies à enseigner la méditation dans les hôpitaux et universités — un guide pratique ancré dans l'expérience terrain.</p>
+          <a href="https://www.amazon.fr/s?k=O%C3%B9+tu+vas+tu+es+Kabat-Zinn&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Le Miracle Morning -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71qxOtPHaEL._AC_UY327_FMwebp_QL65_.jpg" alt="Le Miracle Morning - Hal Elrod" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Hal Elrod</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧘 Méditation</div>
+          <h3 class="livre-titre">Le Miracle Morning</h3>
+          <div class="livre-auteur">Hal Elrod</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.7/5 · 14 000+ avis)</span></div>
+          <p class="livre-description">Après un accident de voiture qui l'a laissé cliniquement mort, Elrod a reconstruit sa vie grâce à une routine matinale. Méditation, visualisation, affirmations — une méthode terrain éprouvée par des millions de personnes.</p>
+          <a href="https://www.amazon.fr/s?k=Miracle+Morning+Hal+Elrod&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+      <!-- Méditer, jour après jour -->
+      <article class="livre-card">
+        <div class="livre-img-wrapper">
+          <img src="https://m.media-amazon.com/images/I/71z6yk5GJWL._AC_UY327_FMwebp_QL65_.jpg" alt="Méditer jour après jour - Christophe André" onerror="this.src='https://via.placeholder.com/140x180/1A0F35/C9A84C?text=Livre'" />
+          <span class="livre-badge">Christophe André</span>
+        </div>
+        <div class="livre-body">
+          <div class="livre-categorie">🧘 Méditation</div>
+          <h3 class="livre-titre">Méditer, jour après jour</h3>
+          <div class="livre-auteur">Christophe André</div>
+          <div class="livre-stars">★★★★★ <span style="color:var(--texte-soft);font-size:0.8rem">(4.8/5 · 8 000+ avis)</span></div>
+          <p class="livre-description">Psychiatre et pionnier de la méditation en France, Christophe André a introduit la pleine conscience dans les hôpitaux. Ce livre est le fruit de 20 ans de pratique clinique et personnelle — concret, sans ésotérisme.</p>
+          <a href="https://www.amazon.fr/s?k=M%C3%A9diter+jour+apr%C3%A8s+jour+Christophe+Andr%C3%A9&i=stripbooks&tag=alevidence-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.09.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.53 17.53 0 0 1-4.445.572c-4.19 0-7.93-1.165-11.21-3.487-.18-.13-.24-.296-.162-.454zm6.565-10.35c0-1.67-.588-3.076-1.764-4.22-1.176-1.143-2.647-1.714-4.41-1.714-.74 0-1.422.126-2.046.377-.623.252-1.123.6-1.5 1.046a.39.39 0 0 0-.075.394c.05.144.175.217.375.217.324 0 .786-.223 1.387-.67.6-.446 1.203-.67 1.81-.67 1.008 0 1.855.346 2.54 1.037.685.692 1.027 1.548 1.027 2.568 0 1.3-.46 2.378-1.38 3.234-.92.857-2.03 1.285-3.33 1.285H0v1.2h.785c1.69 0 3.09-.452 4.19-1.358 1.1-.906 1.635-2.09 1.635-3.526z"/></svg>
+            Voir sur Amazon
+          </a>
+        </div>
+      </article>
+
+    </div><!-- fin grille méditation -->
+
+  </div>
+</section>
+
+<!-- CITATION -->
+<section class="citation-section">
+  <div class="container">
+    <div class="citation-block">
+      <blockquote>
+        "Le voyage le plus difficile est celui qui mène vers l'intérieur de soi. C'est aussi le plus transformateur."
+      </blockquote>
+      <cite>— Rainer Maria Rilke</cite>
+    </div>
+  </div>
+</section>
+
+<!-- REDIRECTION SITE PRINCIPAL -->
+<section class="newsletter" id="newsletter">
+  <div class="container">
+    <div class="newsletter-box">
+      <h2 class="section-title">Tu veux aller plus <span>loin que les livres ?</span></h2>
+      <div class="separator"></div>
+      <p>Coaching, formation et ressources pour passer à l'action et devenir la meilleure version de toi-même.</p>
+      <a href="#" class="hero-cta" style="display:inline-block;margin-top:0.5rem;" onclick="return false;">
+        Découvrir le site →
+      </a>
+      <p class="newsletter-legal" style="margin-top:1.5rem;">Lien disponible prochainement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">✦ Vers le Meilleur de Soi</div>
+    <nav class="footer-links">
+      <a href="#livres">Livres</a>
+      <a href="#categories">Catégories</a>
+      <a href="#newsletter">Aller plus loin</a>
+      <a href="#mentions">Mentions légales</a>
+    </nav>
+    <div class="footer-affiliation" id="mentions">
+      <strong>Mention légale — Programme Partenaires Amazon</strong><br>
+      En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Les liens présents sur ce site sont des liens affiliés : si vous achetez un produit via ces liens, je perçois une petite commission, sans coût supplémentaire pour vous. Cela me permet de continuer à vous proposer des sélections de qualité.
+    </div>
+    <p class="footer-copy">© 2024 VersLeMeilleurDeSoi.fr — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script>
+  // ── CANVAS ÉTOILES ──
+  (function() {
+    const canvas = document.getElementById('stars-canvas');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    const NUM_STARS = 200;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function createStars() {
+      stars = [];
+      for (let i = 0; i < NUM_STARS; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.8 + 0.2,
+          alpha: Math.random(),
+          speed: Math.random() * 0.005 + 0.002,
+          phase: Math.random() * Math.PI * 2
+        });
+      }
+    }
+
+    function draw(t) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      stars.forEach(s => {
+        const alpha = 0.3 + 0.7 * Math.abs(Math.sin(t * s.speed + s.phase));
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(201,168,76,${alpha * 0.8})`;
+        ctx.fill();
+      });
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', () => { resize(); createStars(); });
+    resize();
+    createStars();
+    requestAnimationFrame(draw);
+  })();
+
+  // ── NEWSLETTER ──
+  function handleNewsletter(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.textContent = '✓ Inscrit !';
+    btn.style.background = 'linear-gradient(135deg, #4CAF50, #2E7D32)';
+    setTimeout(() => {
+      btn.textContent = 'Je m\'inscris →';
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  }
+
+  // ── FILTRAGE RUBRIQUES ──
+  function filtrerRubrique(cat, el) {
+    // Mettre à jour le bouton actif
+    document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+
+    const headers = document.querySelectorAll('.rubrique-header');
+    const grids = document.querySelectorAll('.livres-grid');
+
+    headers.forEach(h => {
+      h.style.display = (cat === 'tous' || h.dataset.rubrique === cat) ? '' : 'none';
+    });
+    grids.forEach(g => {
+      g.style.display = (cat === 'tous' || g.dataset.rubrique === cat) ? '' : 'none';
+    });
+  }
+
+  // ── SMOOTH SCROLL ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>
